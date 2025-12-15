@@ -58,7 +58,7 @@ Error generating stack: `+i.message+`
             [-webkit-text-fill-color:transparent]\r
             w-[250px]\r
           `,children:"O que faço..."}),w.jsx("div",{ref:a,onMouseDown:l,onMouseLeave:o,onMouseUp:r,onMouseMove:c,className:`\r
-            flex gap-[60px]\r
+            flex gap-[20px]\r
             overflow-x-auto overflow-y-hidden\r
             flex-nowrap\r
             cursor-grab active:cursor-grabbing\r
@@ -70,6 +70,7 @@ Error generating stack: `+i.message+`
             [&::-webkit-scrollbar]:hidden\r
             [-ms-overflow-style:none]\r
             [scrollbar-width:none]\r
+            lg:gap-[60px]\r
           `,children:h3.map((h,d)=>w.jsxs("div",{className:`\r
                 relative flex flex-col gap-[45px] justify-center\r
                 min-w-[270px] w-full min-h-[330px]\r
