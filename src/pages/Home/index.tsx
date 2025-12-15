@@ -5,12 +5,14 @@ import { Hero } from "../../components/Hero";
 import { Projects } from "../../components/Projects";
 
 import { ToastContainer } from 'react-toastify';
+import { Stacks } from "../../components/Stacks";
 
 const Home = () => {
   return (
     <>
       <Header />
       <Hero />
+      <Stacks />
       <About />
       <Projects />
       <Footer />

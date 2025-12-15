@@ -175,7 +175,7 @@ export function Footer() {
         </form>
       </div>
 
-      <p className="text-sm text-white/60 text-center mx-3">
+      <p className="text-sm text-white/60 text-center mx-3 pb-3">
         © 2025 Kauanny Lucena — Desenvolvido com carinho e criatividade.
       </p>
     </motion.footer>

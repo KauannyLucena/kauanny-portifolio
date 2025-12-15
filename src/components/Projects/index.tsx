@@ -81,7 +81,7 @@ export function Projects() {
       transition={{ duration: 0.7 }}
       viewport={{ once: true, amount: 0.2 }}
     >
-      <div className="flex flex-col max-w-[1115px] mx-auto px-[20px] py-[3rem] lg:py-0 lg:py-[3rem] lg:p-0">
+      <div className="flex flex-col max-w-[1115px] mb-[150px] mx-auto px-[20px] py-[3rem] lg:py-0 lg:py-[3rem] lg:p-0">
         <h2 className="bg-gradient-to-r from-[#E055CE] via-[#6E69F6] to-[#3834BD] text-transparent bg-clip-text text-[30px] font-bold mb-1.5">
           Projetos
         </h2>
@@ -92,7 +92,7 @@ export function Projects() {
 
         <div
           ref={sliderRef}
-          className="flex flex-row gap-6 overflow-x-auto scrollbar-hide pb-4 cursor-grab"
+          className="flex flex-row gap-6 overflow-x-auto scrollbar-hide cursor-grab"
           onMouseDown={handleMouseDown}
           onMouseMove={handleMouseMove}
           onMouseUp={handleMouseUpLeave}
@@ -109,23 +109,15 @@ export function Projects() {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="flex-none w-[320px] flex flex-col gap-[10px] relative"
+              className="flex-none w-full max-w-[415px] min-h-[315px] flex flex-col relative"
             >
               <div className='relative'>
                 <img
                   src={project.thumb}
                   alt={project.name}
-                  className="pointer-events-none w-full h-[220px] object-cover before:absolute before:inset-0 before:bg-black/80 before:rounded-lg"
+                  className="pointer-events-none w-full h-full object-cover before:absolute before:inset-0 before:bg-black/80 "
                 />
                 <div className="absolute inset-0 bg-black/40 rounded-lg"></div>
-              </div>
-              <div className='absolute bottom-[20px] left-[20px]'>
-                <h3 className="text-[18px] font-bold text-[#E0E0E0]">
-                  {project.name}
-                </h3>
-                <p className="text-[15px] font-normal text-[#A0A0A0]">
-                  {project.description}
-                </p>
               </div>
             </div>
           ))}
